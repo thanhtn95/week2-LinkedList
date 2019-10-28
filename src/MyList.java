@@ -100,7 +100,7 @@ public class MyList {
             numNodes--;
             return true;
         }
-        for (int i = 0; i < numNodes && tmp.next != null; i++) {
+        for (int i = 0; i < numNodes-1 && tmp.next != null; i++) {
             if (tmp.next.getData().equals(obj)) {
                 Node holder = tmp.next.next;
                 tmp.next = holder;
